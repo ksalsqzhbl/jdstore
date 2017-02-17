@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   root "welcome#index"
 
   namespace :admin do
+    resources :categories
     resources :products
     resources :orders do
      member do
