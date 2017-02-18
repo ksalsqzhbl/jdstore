@@ -1,25 +1,6 @@
 
 
 
-/* Body
-------------------------------------- */
-body {
-    background: #ffffff;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-style: normal;
-    font-weight: 300;
-    position: relative;
-    padding-top: 75px;
-}
-
-html,body {
-  width: 100%;
-  overflow-x: hidden;
-}
-
-html {
-  font-size: 100%;
-}
 
 
 /*---------------------------------------
@@ -228,8 +209,8 @@ a:hover, a:active, a:focus {
   color: black;
 }
 
-.navbar-default {
-  background: #fff;
+.navbar.navbar-default.navbar-fixed-top {
+  background-color: #304352;
   box-shadow: 0px 2px 8px 0px rgba(50, 50, 50, 0.04);
   border: none;
   margin-bottom: 0px !important;
@@ -552,17 +533,6 @@ a:hover, a:active, a:focus {
 
 
 
-/*---------------------------------------
-    Footer section
------------------------------------------*/
-
-footer {
-  padding-bottom: 50px;
-  background: #304352;
-  color: #ffffff;
-  padding: 20px;
-  height: 180px;
-}
 
 
 
