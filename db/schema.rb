@@ -61,6 +61,7 @@ ActiveRecord::Schema.define(version: 20170217124610) do
     t.text     "description"
     t.integer  "quantity"
     t.integer  "price"
+    t.integer  "image_path"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
     t.string   "image"
