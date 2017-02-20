@@ -24,23 +24,23 @@
 	<!-- Google web font  -->
 
 	<!-- 导航栏上移后固定-->
-<!--	<script type="text/javascript">
-	$(function(){
-	var nav=$(".navbar-header"); //得到导航对象
-	var win=$(window); //得到窗口对象
-	var sc=$(document);//得到document文档对象。
-	win.scroll(function(){
-		if(sc.scrollTop()>=50){
-			nav.addClass("fixednav");
-		 $(".navTmp").fadeIn();
-		}else{
-		 nav.removeClass("fixednav");
-		 $(".navTmp").fadeOut();
-		}
-	})
-	})
-</script> -->
-<!-- 导航栏上移后固定-->
+<script type="text/javascript">
+$(function(){
+var nav=$(".navbar.navbar-default"); //得到导航对象
+var win=$(window); //得到窗口对象
+var sc=$(document);//得到document文档对象。
+win.scroll(function(){
+  if(sc.scrollTop()>=100){
+    nav.addClass("fixednav");
+   $(".navTmp").fadeIn();
+  }else{
+   nav.removeClass("fixednav");
+   $(".navTmp").fadeOut();
+  }
+})
+})
+</script>
+	<!-- 导航栏上移后固定-->
 </head>
 
 <body id="top" data-spy="scroll" data-offset="50" data-target=".navbar-collapse">
@@ -54,7 +54,7 @@
 
 <!-- Navigation section  -->
 
- <div class="navbar navbar-default navbar-fixed-top" role="navigation" >
+ <div class="navbar navbar-default" role="navigation" >
     <div class="container">
 
       <div class="navbar-header">
@@ -89,6 +89,8 @@
 <!-- Home section -->
 
 <section id="home">
+	<div class="container">
+    <div class="row">
   <!--<div class="overlay"></div>
   <div class="container">
     <div class="row">
@@ -114,11 +116,11 @@
             <div class="carousel-inner" role="listbox">
 
                 <!-- First Slide -->
-                <div class="item active" margin-top="200px">
+                <div class="item active" margin-top="100px">
 
                     <!-- Slide Background -->
 
-								      <img src="https://ww3.sinaimg.cn/large/006tNc79jw1fcr1hcnqytj30sz0gvafv.jpg" alt="Bootstrap Touch Slider" width="100%" />
+								      <img src="https://ww3.sinaimg.cn/large/006tNc79jw1fcr1hcnqytj30sz0gvafv.jpg" alt="Bootstrap Touch Slider" width="100%" style="transparent"/>
 
 									 <div class="bs-slider-overlay"></div>
 
@@ -145,7 +147,7 @@
                     <!-- Slide Text Layer -->
                     <div class="slide-text slide_style_center">
                         <h1 data-animation="animated flipInX">文化认同感</h1>
-                        <p data-animation="animated lightSpeedIn">在全球化竞争的趋势下，不论对自己还是下一代而言，都更应该重视文化认同感。</p>
+                        <p data-animation="animated lightSpeedIn">在全球化竞争的趋势下，更应该重视文化认同感。</p>
                         <a href="/culture" target="_blank" class="btn btn-default" data-animation="animated fadeInUp">了解更多</a>
                         <a href="/products" target="_blank"  class="btn btn-primary" data-animation="animated fadeInDown">我想学！</a>
                     </div>
@@ -161,8 +163,8 @@
                     <!-- Slide Text Layer -->
                     <div class="slide-text slide_style_left">
                         <h1 data-animation="animated zoomInLeft">一站式服务</h1>
-                        <p data-animation="animated fadeInLeft">——从器材到老师，我们提供一切，让古琴不再曲高和寡。<br/><br/>喜欢古琴，却找不到资源？我们来满足您的需求<br/><br/>品质保障，节省您的时间和注意力。
-													<br/><br/>注册即可试看在线课，购买任何服务赠送古琴学习高频小套路！</p>
+                        <p data-animation="animated fadeInLeft">——从器材到老师，我们提供一切，克服资源稀缺。<br/><br/>品质保障，节省您的时间和注意力。
+													<br/><br/>注册有惊喜，购买任何服务有大礼！</p>
                         <a href="/allinone" target="_blank" class="btn btn-default" data-animation="animated fadeInLeft">了解更多</a>
                         <a href="/products" target="_blank" class="btn btn-primary" data-animation="animated fadeInRight">我想学!</a>
                     </div>
@@ -183,7 +185,8 @@
                 <span class="fa fa-angle-right" aria-hidden="true"></span>
                 <span class="sr-only">Next</span>
             </a>
-
+        </div>
+				  </div>
         </div> <!-- End  bootstrap-touch-slider Slider -->
 </section>
 
@@ -198,7 +201,8 @@
 
       <div class="col-md-9 col-sm-8 wow fadeInUp" data-wow-delay="0.2s">
         <div class="about-thumb">
-          <h1>简介</h1>
+          <h1>简介 <embed background-color="#eee" height="60px" width="100px" margin-top="20px" src="audio/my_audio.mp3"> </h1>
+
           <p>在全球化竞争的时代里，每个人都需要释放压力,找回文化归属感，古琴<br/>是一个不错的媒介。因其平和高雅的意境，古琴在中国传统文化中有着重要<br/>地位，并在2013年被联合国教科文组织列为人类非物质文化遗产代表作。
 						<br/>古琴曾一度衰落，虽建国后逐渐复苏，但依然冷门,
 						最主要的原因，就是资<br/>源的匮乏——好琴难觅，良师难寻，让不爱好者甚至无法开始。为了古<br/>琴的传承和发展，我们要为古琴爱好者提供优质资源，
@@ -312,7 +316,7 @@
 
 <!-- Gallery section -->
 
-<section id="gallery">
+<section id="gallery" >
   <div class="container">
     <div class="row">
 
@@ -440,8 +444,6 @@
 <a href="#" class="go-top" style="z-index:1000;"><i class="fa fa-angle-up"></i></a>
 
 <!-- Javascript  -->
-
-
 
 <script src="js/jquery.js"></script>
 <script src="js/bootstrap.min.js"></script>

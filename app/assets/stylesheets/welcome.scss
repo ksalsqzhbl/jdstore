@@ -8,6 +8,7 @@
     overflow: hidden;
     padding-top: 24px;
     position: relative;
+
 }
 
 
@@ -15,7 +16,7 @@
     overflow: hidden;
     max-height: 700px;
     position: relative;
-    background: #000000;
+
 }
 .bs-slider:hover {
     cursor: -moz-grab;
@@ -37,8 +38,9 @@
 .bs-slider > .carousel-inner > .item > img,
 .bs-slider > .carousel-inner > .item > a > img {
     margin: auto;
-    width: 2000px;
-
+    width: 1400px;
+    height: 500px;
+    opacity:0.7;
 }
 
 /********************

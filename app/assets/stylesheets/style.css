@@ -195,6 +195,20 @@ a:hover, a:active, a:focus {
 /*---------------------------------------
     Main Navigation
 -----------------------------------------*/
+
+
+.navbar {
+  color: black;
+}
+
+.navbar.navbar-default {
+  background-color: #eee;
+  box-shadow: 0px 2px 8px 0px rgba(50, 50, 50, 0.04);
+  border: none;
+  margin-bottom: 0px !important;
+
+}
+
 /*-----导航栏上移后固定---*/
 .fixednav {
     position: fixed;
@@ -204,18 +218,6 @@ a:hover, a:active, a:focus {
     z-index: 1;
 }
 /*-----导航栏上移后固定---*/
-
-.navbar {
-  color: black;
-}
-
-.navbar.navbar-default.navbar-fixed-top {
-  background-color: #304352;
-  box-shadow: 0px 2px 8px 0px rgba(50, 50, 50, 0.04);
-  border: none;
-  margin-bottom: 0px !important;
-
-}
 
 .navbar-default .navbar-brand {
   color: #304352;
@@ -347,6 +349,7 @@ a:hover, a:active, a:focus {
   text-align: center;
   background-size: 100% auto;
   background-repeat: no-repeat;
+  background-image: url(https://ww4.sinaimg.cn/large/006tKfTcgy1fcxac0wnbzj30ki0blqib.jpg);
 }
 
 #home h1 {
@@ -365,7 +368,9 @@ a:hover, a:active, a:focus {
 -----------------------------------------*/
 
 #about {
-  background: #f0f0f0;
+  background-image: url(https://ww4.sinaimg.cn/large/006tKfTcgy1fcxac0wnbzj30ki0blqib.jpg);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
 }
 
 #about .item {
@@ -378,6 +383,7 @@ a:hover, a:active, a:focus {
   border-radius: 4px;
   padding: 50px;
   position: relative;
+  opacity:0.7;
 }
 
 #about .about-img img {
@@ -460,7 +466,7 @@ a:hover, a:active, a:focus {
 -----------------------------------------*/
 
 #gallery {
-  background: #ffffff;
+  background:#fff;
 }
 
 #gallery .gallery-thumb {
