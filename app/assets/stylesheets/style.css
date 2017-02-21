@@ -378,7 +378,7 @@ a:hover, a:active, a:focus {
 }
 
 #about .about-thumb {
-  background-color: #d7ae7e;
+  background-image: url(https://ww2.sinaimg.cn/large/006tNbRwgy1fcye0b7a4aj301f01fglk.jpg);
   border-radius: 4px;
   padding: 30px;
   position: relative;
@@ -391,6 +391,7 @@ a:hover, a:active, a:focus {
   left: -120px;
   bottom: -388px;
   padding: 12px;
+  opacity:0.9;
 }
 
 #about .team-thumb {
@@ -398,10 +399,11 @@ a:hover, a:active, a:focus {
   height: 400px;
   margin: 32px 0;
   text-align: center;
-  background: #d7ae7e;
+  background-image: url(https://ww2.sinaimg.cn/large/006tNbRwgy1fcye0b7a4aj301f01fglk.jpg) ;
   border-radius: 4px;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
+
 }
 
 #about .team-thumb .image-holder {
