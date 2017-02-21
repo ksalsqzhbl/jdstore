@@ -34,7 +34,7 @@ h3 {
 }
 
 p {
-  color: #888;
+  color: #000;
   font-size: 20px;
   letter-spacing: 1px;
   line-height: 34px;
@@ -196,20 +196,6 @@ a:hover, a:active, a:focus {
     Main Navigation
 -----------------------------------------*/
 
-
-.navbar {
-  color: black;
-}
-
-.navbar.navbar-default {
-  background-color: #eee;
-  box-shadow: 0px 2px 8px 0px rgba(50, 50, 50, 0.04);
-  border: none;
-  margin-bottom: 0px !important;
-
-}
-
-/*-----导航栏上移后固定---*/
 .fixednav {
     position: fixed;
     top: 0px;
@@ -217,7 +203,14 @@ a:hover, a:active, a:focus {
     width: 100%;
     z-index: 1;
 }
-/*-----导航栏上移后固定---*/
+
+.navbar.navbar-default {
+/*  background-color: #eee;  */
+  box-shadow: 0px 2px 8px 0px rgba(50, 50, 50, 0.04);
+  border: none;
+  margin-bottom: 0px !important;
+  background-image: url(https://ww1.sinaimg.cn/large/006tNbRwgy1fcy9e1o19xj30ek01bmy6.jpg);
+}
 
 .navbar-default .navbar-brand {
   color: #304352;
@@ -348,9 +341,10 @@ a:hover, a:active, a:focus {
   height: 100vh;
   text-align: center;
   background-size: 100% auto;
-  background-repeat: no-repeat;
-  background-image: url(https://ww4.sinaimg.cn/large/006tKfTcgy1fcxac0wnbzj30ki0blqib.jpg);
+  background-image: url(https://ww4.sinaimg.cn/large/006tNbRwgy1fcyb0ypv0mj30oz0e6h3j.jpg);
 }
+
+
 
 #home h1 {
   color: #ffffff;
@@ -368,7 +362,7 @@ a:hover, a:active, a:focus {
 -----------------------------------------*/
 
 #about {
-  background-image: url(https://ww4.sinaimg.cn/large/006tKfTcgy1fcxac0wnbzj30ki0blqib.jpg);
+  background-image: url(https://ww1.sinaimg.cn/large/006tKfTcgy1fcxyc9iviqj30sg0j9wgz.jpg);
   background-size: 100% auto;
   background-repeat: no-repeat;
 }
@@ -379,7 +373,7 @@ a:hover, a:active, a:focus {
 }
 
 #about .about-thumb {
-  background: #ffffff;
+  background-image: url(https://ww1.sinaimg.cn/large/006tNbRwgy1fcya0sxokqj303y03j3ys.jpg);
   border-radius: 4px;
   padding: 50px;
   position: relative;

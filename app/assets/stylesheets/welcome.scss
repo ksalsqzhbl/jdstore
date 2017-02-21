@@ -2,21 +2,24 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+.header  {
+background-image: url(https://ww3.sinaimg.cn/large/006tKfTcgy1fcxzwgie0jj30ot03pdkr.jpg);
+background-repeat: no-repeat;
+background-size: contain;
+margin-top: -75px;
+}
+
 .row-1 {
     width: 100%;
     height: 113px;
     overflow: hidden;
     padding-top: 24px;
     position: relative;
-
 }
 
-
 .bs-slider{
-    overflow: hidden;
-    max-height: 700px;
-    position: relative;
 
+    max-height: 700px;
 }
 .bs-slider:hover {
     cursor: -moz-grab;
@@ -37,10 +40,11 @@
 
 .bs-slider > .carousel-inner > .item > img,
 .bs-slider > .carousel-inner > .item > a > img {
-    margin: auto;
-    width: 1400px;
-    height: 500px;
-    opacity:0.7;
+    margin-top: 100px;
+    width: 1095px;
+    height: 450px;
+    opacity:0.9;
+    margin-left: 145px;
 }
 
 /********************
@@ -54,8 +58,9 @@
     top: 0;
     z-index: 1;
     opacity: 0;
-    width: 100%;
-    position: absolute;
+    width: 90%;
+    margin-left: 5%;
+    position: relative;
     left: 0 !important;
     display: block !important;
     -webkit-transition: opacity ease-in-out 1s;
@@ -70,8 +75,8 @@
     position: relative;
 }
 .fade .item.active {
-    opacity: 1;
     z-index: 2;
+    opacity: 1;
     width: 100%;
     height:auto;
     -webkit-transition: opacity ease-in-out 1s;
@@ -79,7 +84,6 @@
     -ms-transition: opacity ease-in-out 1s;
     -o-transition: opacity ease-in-out 1s;
     transition: opacity ease-in-out 1s;
-    background-size: cover;
 }
 
 
@@ -114,7 +118,7 @@
     left: 1%;
 }
 .control-round .carousel-control.right {
-    right: 1%;
+  margin-right: -135px;
 }
 .control-round .carousel-control.left:hover,
 .control-round .carousel-control.right:hover{

@@ -3,13 +3,32 @@
 <html lang="en">
 <head>
 
+
+	<script type="text/javascript">
+		$(function(){
+		var nav=$(".navbar"); //得到导航对象
+		var win=$(window); //得到窗口对象
+		var sc=$(document);//得到document文档对象。
+		win.scroll(function(){
+			if(sc.scrollTop()>=80){
+				nav.addClass("fixednav");
+			 $(".navTmp").fadeIn();
+			}else{
+			 nav.removeClass("fixednav");
+			 $(".navTmp").fadeOut();
+			}
+		})
+		})
+	</script>
+
+
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="keywords" content="">
 	<meta name="description" content="">
 
-	<title>Easy Guqin</title>
+	<title>琴功简学</title>
 
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/animate.min.css">
@@ -23,28 +42,12 @@
 
 	<!-- Google web font  -->
 
-	<!-- 导航栏上移后固定-->
-<script type="text/javascript">
-$(function(){
-var nav=$(".navbar.navbar-default"); //得到导航对象
-var win=$(window); //得到窗口对象
-var sc=$(document);//得到document文档对象。
-win.scroll(function(){
-  if(sc.scrollTop()>=100){
-    nav.addClass("fixednav");
-   $(".navTmp").fadeIn();
-  }else{
-   nav.removeClass("fixednav");
-   $(".navTmp").fadeOut();
-  }
-})
-})
-</script>
-	<!-- 导航栏上移后固定-->
+
+
 </head>
 
+
 <body id="top" data-spy="scroll" data-offset="50" data-target=".navbar-collapse">
-<!--<div class="adcenter"><script src="http://www.cssmoban.com/include/new/ggad2_728x90.js"></script></div>-->
 
 <!-- Preloader section -->
 
@@ -52,10 +55,30 @@ win.scroll(function(){
      <div class="sk-spinner sk-spinner-pulse"></div>
 </div> -->
 
+	<div class="header">
+		<div class="container-fluid">
+
+    <div class="row">
+        <div class="col-md-offset-5 col-md-10 col-sm-12 wow fadeInUp" data-wow-delay="0.3s">
+             <br/>
+						 <img src="images/qin.png" height="90px" width="90px">
+        </div>
+				<div class="col-md-offset-9 col-md-10 col-sm-12">
+					<audio controls="controls" >
+					<source src="audio/my_audio.mp3" />
+				 </audio>
+				</div>
+				<div class="col-md-offset-4 col-md-10 col-sm-12 wow fadeInUp" data-wow-delay="0.3s">
+					   <p class="wow fadeInUp">道从简 术从心 器至精 授至诚  </p>
+        </div>
+
+    </div>
+  </div>
+
 <!-- Navigation section  -->
 
- <div class="navbar navbar-default" role="navigation" >
-    <div class="container">
+ <div class="navbar navbar-default fixednav" role="navigation" >
+    <div class="container-fluid">
 
       <div class="navbar-header">
         <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -64,8 +87,7 @@ win.scroll(function(){
           <span class="icon icon-bar"></span>
 					<span class="icon icon-bar"></span>
         </button>
-         <a href="/" class="navbar-brand smoothScroll">琴功简学</a>
-
+      <a href="/" class="navbar-brand smoothScroll">琴功简学</a>
       </div>
 
         <div class="collapse navbar-collapse">
@@ -89,21 +111,8 @@ win.scroll(function(){
 <!-- Home section -->
 
 <section id="home">
-	<div class="container">
-    <div class="row">
-  <!--<div class="overlay"></div>
-  <div class="container">
-    <div class="row">
 
-      <div class="col-md-offset-1 col-md-10 col-sm-12 wow fadeInUp" data-wow-delay="0.3s">
-        <h1 class="wow fadeInUp" data-wow-delay="0.6s">Let's take a snapshot</h1>
-        <p class="wow fadeInUp" data-wow-delay="0.9s">Snapshot website template is available for free download. Anyone can modify and use it for any site. Please tell your friends about <a rel="nofollow" href="http://www.templatemo.com">templatemo</a>. Thank you.</p>
-        <a href="#about" class="smoothScroll btn btn-success btn-lg wow fadeInUp" data-wow-delay="1.2s">Learn more</a>
-      </div>
-
-    </div>
-  </div>-->
-  <div id="bootstrap-touch-slider" class="carousel bs-slider slide  control-round indicators-line" data-ride="carousel" data-pause="hover" data-interval="5000" >
+  <div id="bootstrap-touch-slider" class="carousel bs-slider slide  control-round indicators-line" data-ride="carousel" data-pause="hover" data-interval="5000">
 
             <!-- Indicators -->
             <ol class="carousel-indicators">
@@ -119,20 +128,18 @@ win.scroll(function(){
                 <div class="item active" margin-top="100px">
 
                     <!-- Slide Background -->
+								    <img src="https://ww3.sinaimg.cn/large/006tNc79jw1fcr1hcnqytj30sz0gvafv.jpg" alt="Bootstrap Touch Slider" class="slide-image" margin-left="100px"/>
 
-								      <img src="https://ww3.sinaimg.cn/large/006tNc79jw1fcr1hcnqytj30sz0gvafv.jpg" alt="Bootstrap Touch Slider" width="100%" style="transparent"/>
-
-									 <div class="bs-slider-overlay"></div>
-
+									 <!-- <div class="bs-slider-overlay"></div>-->
                     <div class="container">
-                        <div class="row">
+                        <div class="row" >
                             <!-- Slide Text Layer -->
                             <div class="slide-text slide_style_right">
-                                <h1 data-animation="animated zoomInRight">古琴</h1>
-                                <p data-animation="animated fadeInRight">——中国最古老的传统乐器.<br/><br/>人类口头及非物资文化遗产代表作.<br/><br/>古琴曲“流水”伴随着旅行者号在宇宙中寻觅着知音.</p>
+                              <!--  <h1 data-animation="animated zoomInRight">古琴</h1>
+                                <p data-animation="animated fadeInRight">——中国最古老的传统乐器.<br/><br/>人类口头及非物资文化遗产代表作.<br/><br/>古琴曲“流水”伴随着旅行者号在宇宙中寻觅着知音.</p>-->
                                 <a href="/guqin" target="_blank" class="btn btn-default" data-animation="animated fadeInLeft">了解更多</a>
                                 <a href="/products" target="_blank"  class="btn btn-primary" data-animation="animated fadeInRight">我想学!</a>
-                            </div>
+														</div>
                         </div>
                     </div>
                 </div>
@@ -143,7 +150,7 @@ win.scroll(function(){
 
                     <!-- Slide Background -->
                     <img src="https://ww2.sinaimg.cn/large/006tNc79gy1fclasjhvx4j30z90rs7az.jpg" alt="Bootstrap Touch Slider"  class="slide-image" />
-                    <div class="bs-slider-overlay"></div>
+                    <!-- <div class="bs-slider-overlay"></div>-->
                     <!-- Slide Text Layer -->
                     <div class="slide-text slide_style_center">
                         <h1 data-animation="animated flipInX">文化认同感</h1>
@@ -159,7 +166,7 @@ win.scroll(function(){
 
                     <!-- Slide Background -->
                     <img src="https://ww4.sinaimg.cn/large/006y8lVagy1fclqwxsecgj30ku0araag.jpg" alt="Bootstrap Touch Slider" class="slide-image"/>
-                    <div class="bs-slider-overlay"></div>
+                    <!-- <div class="bs-slider-overlay"></div>-->
                     <!-- Slide Text Layer -->
                     <div class="slide-text slide_style_left">
                         <h1 data-animation="animated zoomInLeft">一站式服务</h1>
@@ -180,13 +187,14 @@ win.scroll(function(){
                 <span class="sr-only">Previous</span>
             </a>
 
-            <!-- Right Control -->
-            <a class="right carousel-control" href="#bootstrap-touch-slider" role="button" data-slide="next">
-                <span class="fa fa-angle-right" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
+						<!-- Right Control -->
+						<a class="right carousel-control" href="#bootstrap-touch-slider" role="button" data-slide="next" margin-right="100px">
+								<span class="fa fa-angle-right" aria-hidden="true"></span>
+								<span class="sr-only">Next</span>
+						</a>
         </div>
 				  </div>
+
         </div> <!-- End  bootstrap-touch-slider Slider -->
 </section>
 
@@ -201,7 +209,7 @@ win.scroll(function(){
 
       <div class="col-md-9 col-sm-8 wow fadeInUp" data-wow-delay="0.2s">
         <div class="about-thumb">
-          <h1>简介 <embed background-color="#eee" height="60px" width="100px" margin-top="20px" src="audio/my_audio.mp3"> </h1>
+          <h1>简介  </h1>
 
           <p>在全球化竞争的时代里，每个人都需要释放压力,找回文化归属感，古琴<br/>是一个不错的媒介。因其平和高雅的意境，古琴在中国传统文化中有着重要<br/>地位，并在2013年被联合国教科文组织列为人类非物质文化遗产代表作。
 						<br/>古琴曾一度衰落，虽建国后逐渐复苏，但依然冷门,
@@ -211,7 +219,7 @@ win.scroll(function(){
       </div>
 
       <div class="col-md-3 col-sm-4 wow fadeInUp about-img" data-wow-delay="0.6s">
-        <img src="https://ww1.sinaimg.cn/large/006tNbRwgy1fcmrgc6xpwj30cz0k9gub.jpg" class="img-responsive img-circle" alt="About">
+        <img src="https://ww3.sinaimg.cn/large/006tNbRwgy1fcyckq5boij30e60k00ut.jpg" class="img-responsive img-circle" alt="About">
       </div>
 
       <div class="clearfix"></div>
@@ -444,6 +452,8 @@ win.scroll(function(){
 <a href="#" class="go-top" style="z-index:1000;"><i class="fa fa-angle-up"></i></a>
 
 <!-- Javascript  -->
+
+
 
 <script src="js/jquery.js"></script>
 <script src="js/bootstrap.min.js"></script>
