@@ -41,8 +41,12 @@ p {
 }
 
 #home p,
-#contact p, footer p {
+footer p {
   color: #f9f9f9;
+}
+
+#contact p {
+  color: #343434;
 }
 
 .btn {
@@ -209,11 +213,11 @@ a:hover, a:active, a:focus {
   box-shadow: 0px 2px 8px 0px rgba(50, 50, 50, 0.04);
   border: none;
   margin-bottom: 0px !important;
-  background-image: url(https://ww1.sinaimg.cn/large/006tNbRwgy1fcy9e1o19xj30ek01bmy6.jpg);
+  background-image: url(https://ww2.sinaimg.cn/large/006tKfTcgy1fcygoqe4vdj30oz01kac9.jpg);
 }
 
 .navbar-default .navbar-brand {
-  color: #304352;
+  color: #343434;
   font-size: 28px;
   font-weight: bold;
   letter-spacing: 2px;
@@ -341,7 +345,8 @@ a:hover, a:active, a:focus {
   height: 100vh;
   text-align: center;
   background-size: 100% auto;
-  background-image: url(https://ww4.sinaimg.cn/large/006tNbRwgy1fcyb0ypv0mj30oz0e6h3j.jpg);
+  background-image: url(https://ww3.sinaimg.cn/large/006tKfTcgy1fcyf0zb37kj31kw0stwjw.jpg);
+  background-repeat: no-repeat;
 }
 
 
@@ -362,7 +367,7 @@ a:hover, a:active, a:focus {
 -----------------------------------------*/
 
 #about {
-  background-image: url(https://ww1.sinaimg.cn/large/006tKfTcgy1fcxyc9iviqj30sg0j9wgz.jpg);
+  background-image: url(https://ww1.sinaimg.cn/large/006tKfTcgy1fcygvuyis9j30sg13dqal.jpg);
   background-size: 100% auto;
   background-repeat: no-repeat;
 }
@@ -373,18 +378,18 @@ a:hover, a:active, a:focus {
 }
 
 #about .about-thumb {
-  background-image: url(https://ww1.sinaimg.cn/large/006tNbRwgy1fcya0sxokqj303y03j3ys.jpg);
+  background-color: #d7ae7e;
   border-radius: 4px;
-  padding: 50px;
+  padding: 30px;
   position: relative;
   opacity:0.7;
 }
 
 #about .about-img img {
-  border: 8px solid #ffffff;
+  border: 8px solid #d7ae7e;
   position: absolute;
   left: -120px;
-  bottom: -425px;
+  bottom: -388px;
   padding: 12px;
 }
 
@@ -393,7 +398,7 @@ a:hover, a:active, a:focus {
   height: 400px;
   margin: 32px 0;
   text-align: center;
-  background: #ffffff;
+  background: #d7ae7e;
   border-radius: 4px;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
@@ -460,7 +465,7 @@ a:hover, a:active, a:focus {
 -----------------------------------------*/
 
 #gallery {
-  background:#fff;
+  background-image: url(https://ww2.sinaimg.cn/large/006tNbRwgy1fcye0b7a4aj301f01fglk.jpg);
 }
 
 #gallery .gallery-thumb {
@@ -492,8 +497,8 @@ a:hover, a:active, a:focus {
 -----------------------------------------*/
 
 #contact {
-  background: #304352;
-  color: #ffffff;
+  background-image: url(https://ww1.sinaimg.cn/large/006tKfTcgy1fcygkqvrfuj303y03j3ys.jpg);
+  color: #343434;
   padding: 20px;
   height: 620px;
 }
@@ -501,7 +506,7 @@ a:hover, a:active, a:focus {
 #contact .form-control {
   background: transparent;
   box-shadow: none;
-  border: 1px solid #f9f9f9;
+  border: 1px solid  #343434;;
   color: #ccc;
   font-size: 20px;
   margin-top: 10px;
@@ -511,7 +516,7 @@ a:hover, a:active, a:focus {
 
 #contact .form-control:focus {
   border-color: #e44c65;
-  color: #ffffff;
+  color: #343434;
 }
 
 #contact input {
