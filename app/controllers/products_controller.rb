@@ -5,7 +5,7 @@ def index
       @products = Product.all
       @categories = Category.all
     else
-      @category_id = Category.find_by(name: params[:category]).id
+      @category_id= Category.find_by(name: params[:category]).id
       @products = Product.where(:category_id => @category_id)
     end
 end

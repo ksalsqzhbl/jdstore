@@ -18,7 +18,7 @@ u.save
 
 puts "1 admin created"
 
-categories_name = ["instruments", "books","online", "offline"]
+categories_name = ["器材", "书","线上课", "线下课"]
 
 create_categories = for i in 1..4 do
 Category.create!([name: categories_name[i - 1]])
